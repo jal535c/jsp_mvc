@@ -42,8 +42,8 @@
                
           <tr>
             <td class="text-center"><%= emp.getId()%></td>
-            <td class="text-center"><%= emp.getNombre()%></td>
-            <td class="text-center"><%= emp.getSalario()%></td>
+            <td><%= emp.getNombre()%></td>
+            <td class="text-center"><%= String.format("%.2f", emp.getSalario()) %> €</td>
             <td class="text-center">
               <a class="btn btn-warning" href="Controlador?accion=editar&id=<%= emp.getId()%>">Editar</a>
               <a class="btn btn-danger" href="Controlador?accion=eliminar&id=<%= emp.getId()%>">Borrar</a>
